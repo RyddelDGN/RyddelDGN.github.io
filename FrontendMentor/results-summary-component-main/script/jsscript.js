@@ -38,7 +38,15 @@ async function select_item() {
   moyTotal = Math.round(moyTotal / tableau.length);
   console.log(moyTotal);
   let result = document.getElementsByClassName("summary")[0];
+  let details = document.getElementsByClassName("detail")[0];
   result.innerHTML = moyTotal;
+  if (moyTotal < 65) {
+    details.innerHTML =
+      "You scored Lower than 65% of the people who have taken these tests.";
+  } else if (moyTotal == 65) {
+    details.innerHTML =
+      "You scored 65% like many other people who have taken these tests.";
+  }
 }
 
 window.addEventListener("load", select_item);
