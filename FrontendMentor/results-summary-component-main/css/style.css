@@ -15,30 +15,31 @@
     --CobaltBlue: rgb(17, 37, 212);
 }
 
-/* @font-face {
-    font-family: ;
-    src: url();
-} */
+@font-face {
+    font-family: "Hanken-Grotesk";
+    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-size: 18px; */
 }
 
 body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
+    font-family: "Hanken-Grotesk";
+    font-size: 18px;
 }
 
 .container {
     display: grid;
     grid-template-columns: 50% 50%;
-    width: 32%;
-    min-height: 20%;
+    max-width: 500px;
+    min-height: 200px;
 }
 
 .card-result {
@@ -48,18 +49,16 @@ body {
 
     background: rgb(46, 43, 233);
     background: linear-gradient(0deg, rgba(46, 43, 233, 0.5826210826210827) 0%, rgba(72, 66, 179, 1) 0%, rgba(14, 73, 218, 1) 100%);
-    /* width: 100%; */
-
 }
 
 .card-result .result {
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     color: var(--LightLavender);
 }
 
 .card-result p {
-    margin: 15px;
+    margin: 10px;
     color: var(--LightLavender);
 }
 
@@ -68,12 +67,11 @@ p {
 }
 
 .score {
-    width: 50%;
-    height: 35%;
+    width: 120px;
+    height: 120px;
     display: inline-block;
-    /* padding: 20px; */
     margin: 10px;
-    border-radius: 80%;
+    border-radius: 50%;
     font-size: 20px;
     color: #fff;
     text-align: center;
@@ -90,13 +88,12 @@ p {
     border-width: 0.1px;
     border-radius: 15px;
     padding-left: 5px;
-    /* border: solid rgb(61, 61, 61); */
 }
 
 .card-summary h3 {
     padding-left: 10px;
     padding-top: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     color: var(--DarkGrayBlue);
 }
 
@@ -106,23 +103,38 @@ p {
 .visual {
     display: grid;
     grid-template-columns: 15% 50% 30%;
-    padding: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 4px;
 }
+
 
 .reaction {
     color: var(--LightRed);
+    background: hsla(0, 100%, 67%, 0.167);
+    border-radius: 20px;
 }
 
 .memory {
     color: var(--OrangeyYellow);
+    background-color: hsla(39, 100%, 56%, 0.203);
+    border-radius: 20px;
 }
 
 .verbal {
     color: var(--GreenTeal);
+    background-color: hsla(166, 100%, 37%, 0.215);
+    border-radius: 20px;
 }
 
 .visual {
     color: var(--DarkGrayBlue);
+    background-color: hsla(224, 30%, 27%, 0.152);
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 button {
@@ -148,13 +160,13 @@ button {
     padding-bottom: 20px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 490px) {
     .container {
         display: block;
     }
 
     p {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     img {
@@ -162,68 +174,6 @@ button {
     }
 
     .container {
-        width: 20%;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    p {
-        font-size: 12px;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-
-    h3 {
-        font-size: 15;
-    }
-
-    .container {
-        width: 30%;
-    }
-}
-
-@media screen and (max-width: 520px) {
-    p {
-        font-size: 10px;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-
-    h3 {
-        font-size: 15;
-    }
-
-    .container {
-        width: 35%;
-    }
-}
-
-@media screen and (max-width: 310px) {
-    body {
-        display: block;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-    }
-
-    p {
-        font-size: 20px;
-    }
-
-    h1 {
-        font-size: 35px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-
-    .container {
-        width: 100%;
-        padding: 10px;
+        max-width: auto;
     }
 }
