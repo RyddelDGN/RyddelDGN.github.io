@@ -166,14 +166,10 @@ button {
     }
 
     p {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     img {
         width: 50%;
-    }
-
-    .container {
-        width: 100%;
     }
 }
