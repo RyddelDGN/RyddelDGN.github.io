@@ -95,6 +95,4 @@ Après avoir exécuter le programme, deux fichier jar seront générés dans le 
 ## Contribution
 ##### Membres de l'equipe:
 * Ryddel D. Guervens Nacius (En qualité de **SCRUM MASTER**)
-* Alpha Mamadou Diallo
-* Axelle Gloria Bationo
-* Yvan Cabrel Layou Fongang
+* Et autres.
